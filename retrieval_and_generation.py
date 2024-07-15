@@ -1,8 +1,8 @@
 from openai import OpenAI
 from sklearn.metrics.pairwise import cosine_similarity
+from key import the_key
 
-OPENAI_API_KEY = "sk-proj-SYAXhaEVw54Bud4ejM5iT3BlbkFJ37RCu74YVSdHN2ekjW13"
-client = OpenAI(api_key=OPENAI_API_KEY) 
+client = OpenAI(api_key=the_key) 
 
 def retrieve_relevant_pieces(embedded_query,embedded_pieces_of_abstracts,pieces_of_abstracts):
     similarity_scores = {}

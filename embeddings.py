@@ -1,6 +1,7 @@
 from langchain_openai import OpenAIEmbeddings
+from key import the_key
 
-OPENAI_API_KEY = "sk-proj-SYAXhaEVw54Bud4ejM5iT3BlbkFJ37RCu74YVSdHN2ekjW13"
+OPENAI_API_KEY = the_key
 
 def embed_pieces_of_abstracts(pieces_of_abstracts):
     embeddings = OpenAIEmbeddings(openai_api_key=OPENAI_API_KEY)
